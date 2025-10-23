@@ -7,6 +7,4 @@ import com.api.transaction_service.enuns.TransactionTypeEnum;
 public interface TransactionUseCase {
 
     TransactionResponse transfer(TransactionRequest transactionRequest);
-
-    TransactionTypeEnum transactionType();
 }

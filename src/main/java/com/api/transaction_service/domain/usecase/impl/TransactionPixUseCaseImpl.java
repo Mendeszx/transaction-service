@@ -2,6 +2,7 @@ package com.api.transaction_service.domain.usecase.impl;
 
 import com.api.transaction_service.app.dto.request.TransactionRequest;
 import com.api.transaction_service.app.dto.response.TransactionResponse;
+import com.api.transaction_service.domain.orchestrator.TransactionOrchestrator;
 import com.api.transaction_service.domain.usecase.TransactionUseCase;
 import com.api.transaction_service.enuns.TransactionStatusEnum;
 import com.api.transaction_service.enuns.TransactionTypeEnum;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 @Component
-public class TransactionPixUseCaseImpl implements TransactionUseCase {
+public class TransactionPixUseCaseImpl implements TransactionOrchestrator {
 
     private static final Logger log = LoggerFactory.getLogger(TransactionPixUseCaseImpl.class);
 
